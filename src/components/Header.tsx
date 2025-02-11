@@ -28,6 +28,16 @@ export function Header() {
             asChild
             className={cn(
               "text-muted-foreground",
+              location.pathname === "/watchlist" && "text-foreground"
+            )}
+          >
+            <Link to="/watchlist">Watchlist</Link>
+          </Button>
+          <Button
+            variant="ghost"
+            asChild
+            className={cn(
+              "text-muted-foreground",
               location.pathname === "/admin" && "text-foreground"
             )}
           >
